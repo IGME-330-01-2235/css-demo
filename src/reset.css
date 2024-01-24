@@ -107,3 +107,7 @@ meter {
 ::-webkit-details-marker {
   display: none;
 }
+
+button {
+  all: revert;
+}

@@ -1,0 +1,56 @@
+html {
+  padding: 40px;
+}
+
+button {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 100;
+}
+
+div {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+h1, h2, h3, h4  {
+  font-weight: bold;
+}
+
+.on .relative {
+  position: relative;
+  top: -30px;
+  left: -30px;
+}
+
+.on .absolute {
+  background-color: #aaa;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+}
+
+.on .absolute.red-square {
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  left: 0;
+}
+
+.on .fixed {
+  background-color: #aaa;
+  position: fixed;
+  bottom: 5px;
+  left: 5px;
+  width: 200px;
+  z-index: 1;
+}
+
+.on .sticky {
+  position: sticky;
+  background-color: #aaa;
+  top: 0;
+}
