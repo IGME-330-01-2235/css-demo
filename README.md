@@ -3,20 +3,21 @@ A demo of different CSS techniques for review.
 
 To run locally, clone the repo, run `npm install` followed by `npm start` - then open a browser to `http://localhost:5173`.
 
-## css-07 - display: flex
+## css-08 - display: grid
 
-This branch demonstrates different values related to display: flex.
+This branch demonstrates different values related to display: grid.
 
-Inspect and try on `div.flex-wrapper`:
+Inspect and try on `div.grid-wrapper`:
 
-* Different values of `flex-direction`
-* Different values of `justify-content`
-* Different values of `align-items`
-* Different values of `gap`
+* Different values of `grid-template-rows`
+* Different values of `grid-template-columns`
 
-Inspect and try on `.on .two`:
+Inspect and try on `.on .one` / `.on .two` / `.on .three`:
 
-* Different values of `flex-grow`
+* Different values of `grid-column-start`
+* Different values of `grid-column-end`
+* Different values of `grid-row-start`
+* Different values of `grid-row-end`
 
 ---
 
