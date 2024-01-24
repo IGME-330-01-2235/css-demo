@@ -7,12 +7,6 @@ h1, h2  {
   font-weight: bold;
 }
 
-/* For good visual rhythm
- * Pick a number (in this case 12)
- * and use integer and integer.5 multiples
- * for your font-size, line-height, and margins.
- */
-
 h1 {
   font-family: 'Russo One', sans-serif;
   font-size: 36px;
@@ -29,11 +23,17 @@ p {
   font-size: 18px;
   line-height: 30px;
   margin-bottom: 24px;
-  /* For easy-to-read blocks of text
-   * ensure that the width is about 26 * (font-size)
-   * which equates to roughly 9 words per line.
-   * Research shows this is the ideal width for
-   * good eye tracking from line-to-line.
-   */
   max-width: 468px;
+}
+
+/* 
+ * This is a really simple example.
+ * Check out https://css-tricks.com/a-complete-guide-to-css-media-queries/
+ * for much more detail!
+ */
+@media screen and (min-width: 600px) {
+  html {
+    background-color: #010220;
+    color: #d5d5d5
+  }
 }

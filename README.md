@@ -3,9 +3,9 @@ A demo of different CSS techniques for review.
 
 To run locally, clone the repo, run `npm install` followed by `npm start` - then open a browser to `http://localhost:5173`.
 
-## css-10 - fonts
+## css-11 - @media
 
-This branch demonstrates how to import custom webfonts, and also set some typography values to make the page a little easier on the eyes.
+This branch demonstrates a simple media query. Try changing the width of the window.
 
 ---
 
