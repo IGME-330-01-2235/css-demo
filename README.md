@@ -3,9 +3,11 @@ A demo of different CSS techniques for review.
 
 To run locally, clone the repo, run `npm install` followed by `npm start` - then open a browser to `http://localhost:5173`.
 
-## css-03 - Reset CSS
+## css-04 - Normal Flow
 
-This branch demonstrates a `reset.css` stylesheet. There are many different examples of a reset file out there. This particular one came from https://elad2412.github.io/the-new-css-reset/. Among all of them, the basic idea is to get rid of all of the default user agent styles so that we're starting from the same baseline in every browser.
+This branch demonstrates the Normal Flow and block- and inline-level elements. See the index.html text for a more thorough description.
+
+Try adjusting the margin and padding on the &lt;p&gt; and &lt;strong&gt; elements to see how they behave.
 
 ---
 
