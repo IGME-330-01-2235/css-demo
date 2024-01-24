@@ -1,30 +1,39 @@
 html {
-  padding: 40px;
+  padding: 48px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-button {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  z-index: 100;
-}
-
-p {
-  padding: 10px;
-  border: 1px solid #aaa;
-}
-
-h1, h2, h3, h4  {
+h1, h2  {
   font-weight: bold;
 }
 
-h4 {
-  padding: 5px;
-  border: 1px solid #ccc;
+/* For good visual rhythm
+ * Pick a number (in this case 12)
+ * and use integer and integer.5 multiples
+ * for your font-size, line-height, and margins.
+ */
+
+h1 {
+  font-family: 'Russo One', sans-serif;
+  font-size: 36px;
+  line-height: 48px;
 }
 
-.on .column-holder {
-  column-count: 3;
-  column-gap: 10px;
-  column-rule: 2px dashed #77f;
+h2 {
+  font-size: 24px;
+  line-height: 36px;
+  margin-bottom: 36px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 24px;
+  /* For easy-to-read blocks of text
+   * ensure that the width is about 26 * (font-size)
+   * which equates to roughly 9 words per line.
+   * Research shows this is the ideal width for
+   * good eye tracking from line-to-line.
+   */
+  max-width: 468px;
 }

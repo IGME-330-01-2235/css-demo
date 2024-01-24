@@ -3,9 +3,10 @@ A demo of different CSS techniques for review.
 
 To run locally, clone the repo, run `npm install` followed by `npm start` - then open a browser to `http://localhost:5173`.
 
-## css-09 - column-count:
+## css-10 - fonts
 
-This branch demonstrates different values for the column-count: property. Inspect and edit the values on the div.column-holder element.
+This branch demonstrates how to import custom webfonts, and also set some typography values to make the page a little easier on the eyes.
+
 ---
 
 The other demos are on different branches:
