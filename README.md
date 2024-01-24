@@ -3,10 +3,9 @@ A demo of different CSS techniques for review.
 
 To run locally, clone the repo, run `npm install` followed by `npm start` - then open a browser to `http://localhost:5173`.
 
-## css-06 - float:
+## css-09 - column-count:
 
-This branch demonstrates different values for the float: property. The description and instructions are over in index.html.
-
+This branch demonstrates different values for the column-count: property. Inspect and edit the values on the div.column-holder element.
 ---
 
 The other demos are on different branches:
