@@ -3,9 +3,20 @@ A demo of different CSS techniques for review.
 
 To run locally, clone the repo, run `npm install` followed by `npm start` - then open a browser to `http://localhost:5173`.
 
-## css-06 - float:
+## css-07 - display: flex
 
-This branch demonstrates different values for the float: property. The description and instructions are over in index.html.
+This branch demonstrates different values related to display: flex.
+
+Inspect and try on `div.flex-wrapper`:
+
+* Different values of `flex-direction`
+* Different values of `justify-content`
+* Different values of `align-items`
+* Different values of `gap`
+
+Inspect and try on `.on .two`:
+
+* Different values of `flex-grow`
 
 ---
 
