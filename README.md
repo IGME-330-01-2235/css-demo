@@ -3,9 +3,9 @@ A demo of different CSS techniques for review.
 
 To run locally, clone the repo, run `npm install` followed by `npm start` - then open a browser to `http://localhost:5173`.
 
-## css-05 - position:
+## css-06 - float:
 
-This branch demonstrates different values for the position: property. The description and instructions are over in index.html.
+This branch demonstrates different values for the float: property. The description and instructions are over in index.html.
 
 ---
 

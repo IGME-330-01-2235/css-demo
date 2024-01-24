@@ -8,72 +8,28 @@
   </head>
   <body class="off">
     <h1>CSS-Demo</h1>
-    <h2>css-05 : position:</h2>
-    <p>This branch demonstrates different values of the position property.</p>
-    <p>All elements on the page (except for the button) start out following static. But clicking the button changes them to follow their declared position.</p>
+    <h2>css-06 : float:</h2>
     <button id="toggle-button">Toggle : off</button>
-    <div class="static">
-      <h3>position: static</h3>
-      <p>The default value of position is "static" - which just means elements follow the Normal Flow.</p>
-      <p>Setting its top, left, bottom, right, and z-index have no effect.</p>
-    </div>
-    <div class="relative">
-      <h3>position: relative</h3>
-      <p>This keeps the original footprint of the element inserted in the Normal Flow.</p>
-      <p>Setting its top, left, bottom, right, and z-index nudges it from where it would otherwise have been.</p>
-    </div>
-    <div class="absolute">
-      <h3>position: absolute</h3>
-      <p>This removes the element from the Normal Flow.</p>
-      <p>Setting its top, left, bottom, right, and z-index nudges it in relation to its first positioned parent.</p>
-      <p>(since this element has no positioned parent, it gets adopted by the viewport and behaves like fixed.)</p>
-    </div>
-    <div style="position: relative;">
-      <p>This is a remix of absolute, but with a bunch of nested parents with position: relative, to demonstrate the in-relation-to aspect of position: absolute.</p>
-      <div style="position: relative;">
-        <p>Use the inspector to turn off the position property on these parent div elements, and watch how the red box (which is absolute) bounces around.</p>
-        <div style="position: relative;">
-          <div style="position: relative;">
-            <div style="position: relative;">
-              <div style="position: relative;">
-                <div class="absolute red-square"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="fixed">
-      <h3>position: fixed</h3>
-      <p>This removes the element from the Normal Flow.</p>
-      <p>Setting its top, left, bottom, right, and z-index is like absolute, but in relation to the viewport.</p>
-    </div>
-    <div>
-      <h3 class="sticky">position: sticky</h3>
-      <p>Sticky is a little weird.</p>
-      <p>It's a technique for setting a scrolling/sticky header.</p>
-      <p>But to demonstrate it effectively, I need a lot of extra text as its sibling.</p>
-      <p>Bacon ipsum dolor amet pig sausage do, dolore andouille sirloin ex ham. Kevin aliqua enim consectetur ut eiusmod veniam frankfurter do tri-tip. Quis kielbasa salami proident do dolore eu est. Cupidatat meatloaf enim sirloin. Pork chop sint laborum consectetur ut alcatra aute. Id beef ribs est, short loin bacon ham aute in ball tip esse andouille.</p>
-    </div>
-    <h4>And Then (still to help sticky) even more text</h4>
-    <div>
-      <p>The rest of this text isn't important, it just forces the page to scroll!</p>
+    <p>This branch demonstrates different values of the float property.</p>
+    <p>The rest of this text isn't important, it just gives us something to wrap around.</p>
+    <div class="left"></div>
     <p>Bacon ipsum dolor amet pig sausage do, dolore andouille sirloin ex ham. Kevin aliqua enim consectetur ut eiusmod veniam frankfurter do tri-tip. Quis kielbasa salami proident do dolore eu est. Cupidatat meatloaf enim sirloin. Pork chop sint laborum consectetur ut alcatra aute. Id beef ribs est, short loin bacon ham aute in ball tip esse andouille.</p>
-      <p>Quis duis strip steak, tenderloin landjaeger ball tip bresaola picanha magna swine commodo chuck ut buffalo. Salami bacon pork loin cillum cupidatat, ad tri-tip. Biltong short ribs spare ribs turducken shankle shank porchetta in ipsum landjaeger duis nostrud lorem. Kielbasa ex exercitation, fatback laborum ipsum pork est in. Dolor do andouille, duis aute kevin non biltong hamburger excepteur turducken.</p>
-      <p>Ham hock cupim labore, voluptate sirloin andouille leberkas magna aliqua ex lorem corned beef. Ribeye cow incididunt dolore jerky turkey ad ipsum duis. Ribeye commodo dolor short ribs do tongue. Culpa cupidatat laboris incididunt in.</p>
-      <p>Aliqua chuck kielbasa consequat, jowl ut tri-tip spare ribs chislic enim. Enim pork loin andouille eu eiusmod. Leberkas meatloaf pork belly, biltong tenderloin officia tongue chicken bacon dolor doner. Voluptate pastrami cow, ball tip id tempor ham hock consectetur pariatur short loin pork chop meatball nulla. Pork jowl kielbasa, proident kevin beef ribs drumstick et shank ball tip ham hock leberkas minim do ad. Sausage flank meatball, in culpa aute duis. Mollit burgdoggen labore, cow est capicola picanha.</p>
-      <p>Exercitation meatloaf ut, qui pork belly ut duis shank cupidatat et ipsum. Consectetur fugiat dolore cupidatat strip steak short loin. Labore sunt landjaeger culpa cupim turducken. Jerky enim tempor laborum porchetta shoulder.</p>
+    <p>Quis duis strip steak, tenderloin landjaeger ball tip bresaola picanha magna swine commodo chuck ut buffalo. Salami bacon pork loin cillum cupidatat, ad tri-tip. Biltong short ribs spare ribs turducken shankle shank porchetta in ipsum landjaeger duis nostrud lorem. Kielbasa ex exercitation, fatback laborum ipsum pork est in. Dolor do andouille, duis aute kevin non biltong hamburger excepteur turducken.</p>
+    <p>Ham hock cupim labore, voluptate sirloin andouille leberkas magna aliqua ex lorem corned beef. Ribeye cow incididunt dolore jerky turkey ad ipsum duis. Ribeye commodo dolor short ribs do tongue. Culpa cupidatat laboris incididunt in.</p>
+    <p>Aliqua chuck kielbasa consequat, jowl ut tri-tip spare ribs chislic enim. Enim pork loin andouille eu eiusmod. Leberkas meatloaf pork belly, biltong tenderloin officia tongue chicken bacon dolor doner. Voluptate pastrami cow, ball tip id tempor ham hock consectetur pariatur short loin pork chop meatball nulla. Pork jowl kielbasa, proident kevin beef ribs drumstick et shank ball tip ham hock leberkas minim do ad. Sausage flank meatball, in culpa aute duis. Mollit burgdoggen labore, cow est capicola picanha.</p>
+    <p>Exercitation meatloaf ut, qui pork belly ut duis shank cupidatat et ipsum. Consectetur fugiat dolore cupidatat strip steak short loin. Labore sunt landjaeger culpa cupim turducken. Jerky enim tempor laborum porchetta shoulder.</p>
+    <div class="right"></div>
     <p>Bacon ipsum dolor amet pig sausage do, dolore andouille sirloin ex ham. Kevin aliqua enim consectetur ut eiusmod veniam frankfurter do tri-tip. Quis kielbasa salami proident do dolore eu est. Cupidatat meatloaf enim sirloin. Pork chop sint laborum consectetur ut alcatra aute. Id beef ribs est, short loin bacon ham aute in ball tip esse andouille.</p>
-      <p>Quis duis strip steak, tenderloin landjaeger ball tip bresaola picanha magna swine commodo chuck ut buffalo. Salami bacon pork loin cillum cupidatat, ad tri-tip. Biltong short ribs spare ribs turducken shankle shank porchetta in ipsum landjaeger duis nostrud lorem. Kielbasa ex exercitation, fatback laborum ipsum pork est in. Dolor do andouille, duis aute kevin non biltong hamburger excepteur turducken.</p>
-      <p>Ham hock cupim labore, voluptate sirloin andouille leberkas magna aliqua ex lorem corned beef. Ribeye cow incididunt dolore jerky turkey ad ipsum duis. Ribeye commodo dolor short ribs do tongue. Culpa cupidatat laboris incididunt in.</p>
-      <p>Aliqua chuck kielbasa consequat, jowl ut tri-tip spare ribs chislic enim. Enim pork loin andouille eu eiusmod. Leberkas meatloaf pork belly, biltong tenderloin officia tongue chicken bacon dolor doner. Voluptate pastrami cow, ball tip id tempor ham hock consectetur pariatur short loin pork chop meatball nulla. Pork jowl kielbasa, proident kevin beef ribs drumstick et shank ball tip ham hock leberkas minim do ad. Sausage flank meatball, in culpa aute duis. Mollit burgdoggen labore, cow est capicola picanha.</p>
-      <p>Exercitation meatloaf ut, qui pork belly ut duis shank cupidatat et ipsum. Consectetur fugiat dolore cupidatat strip steak short loin. Labore sunt landjaeger culpa cupim turducken. Jerky enim tempor laborum porchetta shoulder.</p>
+    <h4 style="clear: both;">This has style="clear: both;" on it.</h4>
+    <p>Quis duis strip steak, tenderloin landjaeger ball tip bresaola picanha magna swine commodo chuck ut buffalo. Salami bacon pork loin cillum cupidatat, ad tri-tip. Biltong short ribs spare ribs turducken shankle shank porchetta in ipsum landjaeger duis nostrud lorem. Kielbasa ex exercitation, fatback laborum ipsum pork est in. Dolor do andouille, duis aute kevin non biltong hamburger excepteur turducken.</p>
+    <p>Ham hock cupim labore, voluptate sirloin andouille leberkas magna aliqua ex lorem corned beef. Ribeye cow incididunt dolore jerky turkey ad ipsum duis. Ribeye commodo dolor short ribs do tongue. Culpa cupidatat laboris incididunt in.</p>
+    <p>Aliqua chuck kielbasa consequat, jowl ut tri-tip spare ribs chislic enim. Enim pork loin andouille eu eiusmod. Leberkas meatloaf pork belly, biltong tenderloin officia tongue chicken bacon dolor doner. Voluptate pastrami cow, ball tip id tempor ham hock consectetur pariatur short loin pork chop meatball nulla. Pork jowl kielbasa, proident kevin beef ribs drumstick et shank ball tip ham hock leberkas minim do ad. Sausage flank meatball, in culpa aute duis. Mollit burgdoggen labore, cow est capicola picanha.</p>
+    <p>Exercitation meatloaf ut, qui pork belly ut duis shank cupidatat et ipsum. Consectetur fugiat dolore cupidatat strip steak short loin. Labore sunt landjaeger culpa cupim turducken. Jerky enim tempor laborum porchetta shoulder.</p>
     <p>Bacon ipsum dolor amet pig sausage do, dolore andouille sirloin ex ham. Kevin aliqua enim consectetur ut eiusmod veniam frankfurter do tri-tip. Quis kielbasa salami proident do dolore eu est. Cupidatat meatloaf enim sirloin. Pork chop sint laborum consectetur ut alcatra aute. Id beef ribs est, short loin bacon ham aute in ball tip esse andouille.</p>
-      <p>Quis duis strip steak, tenderloin landjaeger ball tip bresaola picanha magna swine commodo chuck ut buffalo. Salami bacon pork loin cillum cupidatat, ad tri-tip. Biltong short ribs spare ribs turducken shankle shank porchetta in ipsum landjaeger duis nostrud lorem. Kielbasa ex exercitation, fatback laborum ipsum pork est in. Dolor do andouille, duis aute kevin non biltong hamburger excepteur turducken.</p>
-      <p>Ham hock cupim labore, voluptate sirloin andouille leberkas magna aliqua ex lorem corned beef. Ribeye cow incididunt dolore jerky turkey ad ipsum duis. Ribeye commodo dolor short ribs do tongue. Culpa cupidatat laboris incididunt in.</p>
-      <p>Aliqua chuck kielbasa consequat, jowl ut tri-tip spare ribs chislic enim. Enim pork loin andouille eu eiusmod. Leberkas meatloaf pork belly, biltong tenderloin officia tongue chicken bacon dolor doner. Voluptate pastrami cow, ball tip id tempor ham hock consectetur pariatur short loin pork chop meatball nulla. Pork jowl kielbasa, proident kevin beef ribs drumstick et shank ball tip ham hock leberkas minim do ad. Sausage flank meatball, in culpa aute duis. Mollit burgdoggen labore, cow est capicola picanha.</p>
-      <p>Exercitation meatloaf ut, qui pork belly ut duis shank cupidatat et ipsum. Consectetur fugiat dolore cupidatat strip steak short loin. Labore sunt landjaeger culpa cupim turducken. Jerky enim tempor laborum porchetta shoulder.</p>
-    </div>
+    <p>Quis duis strip steak, tenderloin landjaeger ball tip bresaola picanha magna swine commodo chuck ut buffalo. Salami bacon pork loin cillum cupidatat, ad tri-tip. Biltong short ribs spare ribs turducken shankle shank porchetta in ipsum landjaeger duis nostrud lorem. Kielbasa ex exercitation, fatback laborum ipsum pork est in. Dolor do andouille, duis aute kevin non biltong hamburger excepteur turducken.</p>
+    <p>Ham hock cupim labore, voluptate sirloin andouille leberkas magna aliqua ex lorem corned beef. Ribeye cow incididunt dolore jerky turkey ad ipsum duis. Ribeye commodo dolor short ribs do tongue. Culpa cupidatat laboris incididunt in.</p>
+    <p>Aliqua chuck kielbasa consequat, jowl ut tri-tip spare ribs chislic enim. Enim pork loin andouille eu eiusmod. Leberkas meatloaf pork belly, biltong tenderloin officia tongue chicken bacon dolor doner. Voluptate pastrami cow, ball tip id tempor ham hock consectetur pariatur short loin pork chop meatball nulla. Pork jowl kielbasa, proident kevin beef ribs drumstick et shank ball tip ham hock leberkas minim do ad. Sausage flank meatball, in culpa aute duis. Mollit burgdoggen labore, cow est capicola picanha.</p>
+    <p>Exercitation meatloaf ut, qui pork belly ut duis shank cupidatat et ipsum. Consectetur fugiat dolore cupidatat strip steak short loin. Labore sunt landjaeger culpa cupim turducken. Jerky enim tempor laborum porchetta shoulder.</p>
     <script type="module" src="./main.ts"></script>
   </body>
 </html>
