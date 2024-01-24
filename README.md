@@ -3,9 +3,18 @@ A demo of different CSS techniques for review.
 
 To run locally, clone the repo, run `npm install` followed by `npm start` - then open a browser to `http://localhost:5173`.
 
-## css-01 - Default Styles
+## css-02 - Style Locations
 
-This branch demonstrates the default styles on the user agent stylesheet in the browser. There is no custom CSS here - everything is the default.
+This branch demonstrates different style locations, all setting a different background color for the `<h1>` element. Each row of the table below shows a different place to write styles, what color is set in that location (for this demo), and describes when to use a particular location/technique. The closer to the bottom, the higher the specificity (meaning the more-specific CSS will override the less-specific CSS).
+
+| Color  | When to use this technique | Where are the styles written |
+|-------:|-------|-------|
+| red    | Usually (except with vite / a bundler). | `<head>` > `<link>` > `head-link.css` |
+| orange | For this-page-only overrides. | `<head>` > `<style>` > *written in the document* |
+| yellow | When using vite / a bundler. | `main.ts` > `import` > `vite-import.css` |
+| green  | Highly unusual. | `<body>` > `<style>` > *written in the document* |
+| blue   | Sometimes. | `<body>` > `<h1>` > `style=""` attribute |
+| purple | Sometimes. (common with frameworks) | `main.ts` > *using JavaScript to select/set the &lt;h1&gt; style attribute* |
 
 ---
 

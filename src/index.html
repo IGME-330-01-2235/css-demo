@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./vite.svg" />
+    <link rel="stylesheet" type="text/css" href="./head-link.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Demo</title>
+    <style type="text/css">h1 { background-color: orange; }</style>
   </head>
   <body>
-    <h1>CSS-Demo</h1>
-    <h2>css-01 : Default Styles</h2>
-    <p>It may not look like much, but there are actually a bunch of different built-in styles that we get by default.</p>
-    <p>These styles vary a bit from browser to browser. Because of that, they tend to be somewhat ... well ... annoying.</p>
-    <p>Open the <em>Chrome Inspector</em> (easiest way is to right-click on something and select "Inspect" from the context menu).</p>
-    <p>On the <strong>Elements</strong> tab, click around on different elements and see how the styles run.</p>
+    <style type="text/css">h1 { background-color: green; }</style>
+    <h1 style="background-color: blue;">CSS-Demo</h1>
+    <h2>css-02 : Style Locations</h2>
+    <p>This branch demonstrates different style locations, all setting a different background color for the &lt;h1&gt; element. Inspect the CSS-Demo text at the top of the page, and see how/where the background-color property is set (and how the overrides happen).</p>
     <script type="module" src="./main.ts"></script>
   </body>
 </html>
