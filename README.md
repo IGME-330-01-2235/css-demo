@@ -3,18 +3,9 @@ A demo of different CSS techniques for review.
 
 To run locally, clone the repo, run `npm install` followed by `npm start` - then open a browser to `http://localhost:5173`.
 
-## css-02 - Style Locations
+## css-03 - Reset CSS
 
-This branch demonstrates different style locations, all setting a different background color for the `<h1>` element. Each row of the table below shows a different place to write styles, what color is set in that location (for this demo), and describes when to use a particular location/technique. The closer to the bottom, the higher the specificity (meaning the more-specific CSS will override the less-specific CSS).
-
-| Color  | When to use this technique | Where are the styles written |
-|-------:|-------|-------|
-| red    | Usually (except with vite / a bundler). | `<head>` > `<link>` > `head-link.css` |
-| orange | For this-page-only overrides. | `<head>` > `<style>` > *written in the document* |
-| yellow | When using vite / a bundler. | `main.ts` > `import` > `vite-import.css` |
-| green  | Highly unusual. | `<body>` > `<style>` > *written in the document* |
-| blue   | Sometimes. | `<body>` > `<h1>` > `style=""` attribute |
-| purple | Sometimes. (common with frameworks) | `main.ts` > *using JavaScript to select/set the &lt;h1&gt; style attribute* |
+This branch demonstrates a `reset.css` stylesheet. There are many different examples of a reset file out there. This particular one came from https://elad2412.github.io/the-new-css-reset/. Among all of them, the basic idea is to get rid of all of the default user agent styles so that we're starting from the same baseline in every browser.
 
 ---
 
