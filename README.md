@@ -3,7 +3,13 @@ A demo of different CSS techniques for review.
 
 To run locally, clone the repo, run `npm install` followed by `npm start` - then open a browser to `http://localhost:5173`.
 
-Each demo is on a different branch:
+## css-01 - Default Styles
+
+This branch demonstrates the default styles on the user agent stylesheet in the browser. There is no custom CSS here - everything is the default.
+
+---
+
+The other demos are on different branches:
 
 |Branch Name | Description |
 |-----------:|-------------|
